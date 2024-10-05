@@ -1,0 +1,352 @@
+body {
+    background-color: #ffffff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0 20px;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #0b0c0c;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 1.1875rem;
+
+}
+
+h4 {
+    margin-bottom: 0px;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: #ffffff;
+    letter-spacing: 0.3px;
+    text-underline-offset: 0.1em;
+}
+
+.section-title .row:last-of-type > span:last-of-type {
+    display: list-item;
+}
+
+button, ::-webkit-file-upload-button {
+    font-size: 1.1875rem;
+    line-height: 1.3157894737;
+}
+
+.file-upload, button {
+    font-size: 1.1875rem;
+    line-height: 1.3157894737;
+}
+
+
+span.count {
+    border-radius: 15px;
+    background-color: white;
+    padding: 4px 9px;
+    color: #06224d;
+}
+
+.tool-summary {
+    float: right;
+    border-left: 1px solid rgba(255, 255, 255, 0.3137254902);
+    padding: 20px;
+}
+
+.summary {
+    background-color: #1d70b8;
+    padding: 20px 25px;
+    margin: 0 -20px;
+    color: white;
+    min-height: 130px;
+    margin-bottom: 25px !important;
+    padding-bottom: 40px;
+}
+
+.summary ul {
+    display: inline-block;
+}
+
+.summary a:link, .summary a:visited, .summary a:hover, .summary a:active {
+    color: #fff;
+}
+
+.summary h1 {
+    margin-bottom: 0px;
+}
+
+.section-title {
+    border: 1px solid #b1b4b6;
+    margin-bottom: 25px !important;
+}
+
+.row {
+    margin-bottom: 5px;
+    font-weight: 700;
+    padding: 15px;
+    border-bottom: 1px solid #b1b4b6;
+    line-height: 1.3157894737;
+    display: block;
+    min-height: 21px;
+}
+
+.row span:first-of-type {
+    padding-right: 30px;
+    float: left;
+    width: 10%;
+    min-height: 50px;
+}
+
+.row span:last-of-type {
+    clear: right;
+}
+
+.section-title div:last-of-type {
+    border-bottom: 0px;
+}
+
+.axe-tag {
+    color: #ffffff;
+    background-color: #1d70b8;
+    letter-spacing: 1px;
+    -moz-osx-font-smoothing: grayscale;
+    padding-top: 5px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    float: right;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.code {
+    background-color: #EEE;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.3157894737;
+}
+
+.tag {
+    padding: 5px 8px 4px 8px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: -webkit-inline-box;
+}
+
+.tag-serious, .tag-critical {
+    color: #942514;
+    background: #f6d7d2;
+}
+
+.tag-moderate {
+    color: #594d00;
+    background: #fff7bf;
+}
+
+.tag-info, .tag-minor {
+    color: #594d00;
+    background: #fff7bf;
+}
+
+code {
+    width: 100%;
+    float: left;
+    background-color: #f6f6f6;
+    color: #2f3337;
+    margin-bottom: 16px;
+}
+
+span.axe-id {
+    color: gray;
+}
+
+footer {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 15px;
+}
+
+section {
+    border: 1px solid #b1b4b6;
+    box-shadow: 1px 1px #dad8d8;
+}
+
+section td {
+    border-top: 1px solid #b1b4b6;
+    border-bottom: 0px;
+}
+
+.learn-more {
+    float: right;
+}
+
+.a11y-tags {
+    background-color: #f6f6f6;
+    color: #2f3337;
+    margin-bottom: 16px;
+}
+.violation-section {
+    padding: 0px 15px;
+    margin-bottom: 15px;
+}
+table {
+    table-layout: fixed;
+
+    counter-reset: row-num;
+    border-spacing: 0;
+}
+
+table tr {
+    counter-increment: row-num;
+    vertical-align: text-top;
+    text-align: left;
+}
+
+
+
+/*
+Generic Styling, for Desktops/Laptops
+*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #0b0c0c;
+    margin-bottom: 20px;
+    border-spacing: 0;
+}
+td, th {
+    padding: 6px;
+    text-align: left;
+
+
+    padding: 10px 20px 10px 0;
+    border-bottom: 1px solid #b1b4b6;
+    text-align: left;
+    vertical-align: top;
+
+}
+
+tr {
+    font-size: 1.1875rem;
+    line-height: 1.3157894737;
+}
+
+/*
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+}
+
+
+table span {
+    display: block;
+}
+
+label#select-file, input#file-upload {
+    color: #ffffff;
+}
+
+
+
+table {
+    counter-reset: rowNumber;
+}
+.violation-section table tr {
+    counter-increment: rowNumber;
+}
+.violation-section table tr td:first-child::before {
+    content: counter(rowNumber);
+    min-width: 1em;
+    margin-right: 0.5em;
+}
+
+.violation-section td:first-of-type {
+    width: 30px;
+}
+
+
+input:disabled, button:disabled, label:disabled, .file-upload-label {
+    display: none;
+}
+
+.file-upload, button {
+    font-family: "GDS Transport",arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.1875;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    /*width: 100%;*/
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 22px;
+    padding: 8px 10px 7px;
+    border: 2px solid rgba(0,0,0,0);
+    border-radius: 0;
+    color: #fff;
+    background-color: #00703c;
+    -webkit-box-shadow: 0 2px 0 #002d18;
+    box-shadow: 0 2px 0 #002d18;
+    text-align: center;
+    vertical-align: top;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+.file-upload:hover, button:hover {
+    background-color: #005a30;
+}
+
+.file-upload:focus, button:focus {
+    border-color: #fd0;
+    color: #0b0c0c;
+    background-color: #fd0;
+    -webkit-box-shadow: 0 2px 0 #0b0c0c;
+    box-shadow: 0 2px 0 #0b0c0c;
+}
+
+
+.file-upload::-webkit-file-upload-button {
+    visibility: hidden;
+}
+.file-upload:hover::before {
+}
+.file-upload:active::before {
+}
+button#generate-report {
+    padding: 11.8px 90px;
+}
